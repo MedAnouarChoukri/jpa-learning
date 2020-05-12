@@ -1,13 +1,12 @@
 package fr.huartgi.jpa.dao4.club;
 
-import java.util.List;
-
-import javax.inject.Named;
-import javax.persistence.TypedQuery;
-
 import fr.huartgi.jpa.core.dao.club.ClubDao;
 import fr.huartgi.jpa.core.dao.fwk.GenericDao;
 import fr.huartgi.jpa.core.domain.club.Club;
+
+import javax.inject.Named;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 @Named
 public class ClubDao4 extends GenericDao<Long, Club> implements ClubDao {
@@ -16,7 +15,6 @@ public class ClubDao4 extends GenericDao<Long, Club> implements ClubDao {
 		super(Club.class);
 	}
 
-	@Override
 	public List<Club> findAll() {
 		
 		String jpql = "select club "

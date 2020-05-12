@@ -16,7 +16,6 @@ public class ClubDao1 extends GenericDao<Long, Club> implements ClubDao {
 		super(Club.class);
 	}
 
-	@Override
 	public List<Club> findAll() {
 		
 		String jpql = "select club from Club club ";

@@ -16,7 +16,6 @@ public class CountryDao5 extends GenericDao<Long, Country> implements CountryDao
 		super(Country.class);
 	}
 
-	@Override
 	public List<Country> findAll() {
 		
 		String jpql = "select country from Country country ";
@@ -26,7 +25,6 @@ public class CountryDao5 extends GenericDao<Long, Country> implements CountryDao
 		
 	}
 
-	@Override
 	public Country findByCode(String code) {
 		
 		String jpql = "select country from Country country where country.code = :code ";
